@@ -176,7 +176,7 @@ export class BoardView {
     const line = document.createElementNS(ns, 'line');
     line.setAttribute('x1', xa); line.setAttribute('y1', ya);
     line.setAttribute('x2', xb); line.setAttribute('y2', yb);
-    line.setAttribute('stroke', 'rgba(123,160,91,0.92)');
+    line.setAttribute('stroke', 'rgba(63,168,160,0.92)');
     line.setAttribute('stroke-width', Math.max(4, cell * 0.13));
     line.setAttribute('stroke-linecap', 'round');
 
@@ -188,7 +188,7 @@ export class BoardView {
       `${xb + px * head * 0.42},${yb + py * head * 0.42}`,
       `${xb - px * head * 0.42},${yb - py * head * 0.42}`,
     ].join(' '));
-    poly.setAttribute('fill', 'rgba(123,160,91,0.92)');
+    poly.setAttribute('fill', 'rgba(63,168,160,0.92)');
 
     svg.appendChild(line);
     svg.appendChild(poly);
